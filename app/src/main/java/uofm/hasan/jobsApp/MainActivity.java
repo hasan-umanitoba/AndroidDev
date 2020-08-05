@@ -1,4 +1,4 @@
-package uofm.hasan.bullsexchange;
+package uofm.hasan.jobsApp;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -157,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
                         String jobTitle = jsonObject.getString("title");
 
 
-
                         String sql = "INSERT INTO jobs (jobId, title, content) VALUES (?, ?, ?)"; //Inserting into JobsDatabase
 
                         SQLiteStatement statement = jobsDb.compileStatement(sql);
@@ -190,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
             updateView();
         }
     }
+
     public void updateView() {
         Cursor c = jobsDb.rawQuery("SELECT * FROM jobs", null);
 
