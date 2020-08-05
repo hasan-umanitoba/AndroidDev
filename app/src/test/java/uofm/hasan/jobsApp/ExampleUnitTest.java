@@ -1,4 +1,4 @@
-package uofm.hasan.bullsexchange;
+package uofm.hasan.jobsApp;
 
 import org.junit.Test;
 
